@@ -150,6 +150,12 @@ export async function buildProject(
         `bundle/nsis/${fileAppName}_${app.version}_${arch}-setup.nsis.zip.sig`
       )
     );
+    winArtifacts.push(
+      join(
+        artifactsPath,
+        `${fileAppName}.exe`
+      )
+    );
 
     artifacts = winArtifacts.map((path) => ({ path, arch }));
   } else {
