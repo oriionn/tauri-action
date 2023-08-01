@@ -110,46 +110,6 @@ export async function buildProject(
     }
 
     const winArtifacts: string[] = [];
-
-    langs.forEach((lang) => {
-      /* winArtifacts.push(
-        join(
-          artifactsPath,
-          `bundle/msi/${fileAppName}_${app.version}_${arch}_${lang}.msi`
-        )
-      );
-      winArtifacts.push(
-        join(
-          artifactsPath,
-          `bundle/msi/${fileAppName}_${app.version}_${arch}_${lang}.msi.zip`
-        )
-      );
-      winArtifacts.push(
-        join(
-          artifactsPath,
-          `bundle/msi/${fileAppName}_${app.version}_${arch}_${lang}.msi.zip.sig`
-        )
-      );
-    });
-
-    winArtifacts.push(
-      join(
-        artifactsPath,
-        `bundle/nsis/${fileAppName}_${app.version}_${arch}-setup.exe`
-      )
-    );
-    winArtifacts.push(
-      join(
-        artifactsPath,
-        `bundle/nsis/${fileAppName}_${app.version}_${arch}-setup.nsis.zip`
-      )
-    );
-    winArtifacts.push(
-      join(
-        artifactsPath,
-        `bundle/nsis/${fileAppName}_${app.version}_${arch}-setup.nsis.zip.sig`
-      )
-    ); /*
     winArtifacts.push(
       join(
         artifactsPath,
